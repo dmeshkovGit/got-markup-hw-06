@@ -11,7 +11,7 @@
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/backgrounds/hero-background-mobile.jpg);
+    url(../../images/backgrounds/hero-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -66,7 +66,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/backgrounds/hero-background-tablet.jpg);
+      url(../../images/backgrounds/hero-background-tablet.jpg);
 
     padding: 112px 0;
   }
@@ -88,7 +88,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/backgrounds/hero-background-tablet.jpg);
+      url(../../images/backgrounds/hero-background-tablet.jpg);
     padding: 188px 0;
   }
 
@@ -110,7 +110,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/backgrounds/hero-background@2x.jpg);
+      url(../../images/backgrounds/hero-background@2x.jpg);
   }
 }
 
@@ -123,7 +123,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/backgrounds/hero-background-tablet@2x.jpg);
+      url(../../images/backgrounds/hero-background-tablet@2x.jpg);
   }
 }
 
@@ -136,6 +136,6 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/backgrounds/hero-background-mobile@2x.jpg);
+      url(../../images/backgrounds/hero-background-mobile@2x.jpg);
   }
 }
