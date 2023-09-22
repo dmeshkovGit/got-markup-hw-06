@@ -1,16 +1,29 @@
 footer {
   background: var(--navyblue, #2e2f42);
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 footer .container {
   display: flex;
-  justify-content: left;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
 }
 
 .footer-content {
-  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-text {
@@ -20,7 +33,7 @@ footer .container {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
-  width: 264px;
+  width: 100%;
 }
 
 .logo-footer {
@@ -41,7 +54,10 @@ footer .container {
 }
 
 .social-media-content {
-  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-media-text {
@@ -69,7 +85,6 @@ footer .social-media-list-item {
   width: 40px;
   height: 40px;
 }
-
 footer .social-media-link {
   display: flex;
   justify-content: center;
@@ -95,15 +110,29 @@ footer .social-media-link:focus {
   letter-spacing: 0.32px;
 }
 
-.email-form {
+.email-form-wrapper {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.email-form-label {
+  width: 100%;
 }
 
 .email-form-input {
-  margin-right: 24px;
-  width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   font-size: 12px;
@@ -113,6 +142,7 @@ footer .social-media-link:focus {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--WHITE, #fff);
+  opacity: 0.3;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -146,4 +176,60 @@ footer .social-media-link:focus {
 
 .email-form-btn-icon {
   margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  footer .container {
+    padding: 0 108px;
+  }
+
+  .footer-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .footer-content {
+    width: 264px;
+    align-items: flex-start;
+  }
+
+  .social-media-content {
+    align-items: flex-start;
+  }
+
+  .email-form {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .email-form-label {
+    width: 264px;
+  }
+
+  .email-form-wrapper {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  footer {
+    padding: 100px 0;
+  }
+  .footer-content-wrapper {
+    gap: 120px;
+  }
+  footer .container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 15px;
+    margin: 0;
+    gap: 80px;
+  }
+  .email-form-input {
+    opacity: 1;
+  }
 }
