@@ -226,7 +226,6 @@ footer .social-media-link:focus {
     flex-direction: row;
     align-items: flex-start;
     padding: 0 15px;
-    margin: 0;
     gap: 80px;
   }
   .email-form-input {

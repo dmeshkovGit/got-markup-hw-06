@@ -1,6 +1,9 @@
-.advantages-list {
+.advantages-section {
   padding-top: 96px;
   padding-bottom: 96px;
+}
+
+.advantages-list {
   display: flex;
   flex-direction: column;
   gap: 72px;
@@ -42,10 +45,13 @@
   .advantages-list-item {
     width: calc((100% - 24px) / 2);
   }
+  .section-list-item-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1158px) {
-  .advantages-list {
+  .advantages-section {
     padding-top: 120px;
     padding-bottom: 120px;
   }
